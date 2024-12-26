@@ -28,7 +28,7 @@ func main() {
 		log.Fatal("New() is nil")
 	}
 
-	cache.startEvictionTicker(1 * time.Minute)
+	cache.StartEvictionTicker(1 * time.Minute)
 
 	if err := cache.Set("key1", "value1", 1*time.Hour); err != nil {
 		log.Fatal(err)
