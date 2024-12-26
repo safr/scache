@@ -19,11 +19,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/safr/scache"
+	cache "github.com/safr/scache"
 )
 
 func main() {
-	cache := New(10)
+	cache := cache.New(10)
 	if cache == nil {
 		log.Fatal("New() is nil")
 	}
